@@ -28,4 +28,4 @@ It's also important to note that this extension is really only relevant to stude
 
 ### February 21, 2020 &mdash; Initial Release `v0.1.0`
 
-First release. Removes overdue box on `lms.asl.org` and replaces it with the text: "Overdue Box Removed! 🤷‍♂️". Includes logo and icon.
+First release. Removes overdue box on `lms.asl.org`. Includes logo and icon.
