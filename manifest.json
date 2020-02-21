@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Schoology Overdue Remover",
+  "description": "Removes the overdue box on Schoology (ASL)!",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Schoology (ASL) overdue box removed!"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+        "matches": ["http://lms.asl.org/*", "https://lms.asl.org/*"],
+        "js": ["popup.js"]
+    }
+  ]
+}
