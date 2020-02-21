@@ -3,7 +3,7 @@
 
   "name": "Schoology Overdue Remover",
   "description": "Removes the overdue box on Schoology (ASL)!",
-  "version": "1.0",
+  "version": "0.1.0",
 
   "browser_action": {
     "default_icon": "icon_48x48.png",
