@@ -1,7 +1,7 @@
 let checkOverdueBoxContentLoop;
 
 // only run script if on Schoology homepage
-if(window.location.pathname == "/home") {
+if(window.location.pathname == "/home" || window.location.pathname == "/") {
 	// overdue box HTML elm
 	const overdueBoxElm = document.querySelector(".overdue-submissions.overdue-submissions-wrapper");
 
@@ -12,11 +12,12 @@ if(window.location.pathname == "/home") {
 		// if overdue box has content, remove and end check loop
 		if(textOfOverdueBox.length > 0) {
 			// delete the overdue box!
-			overdueBoxElm.innerHTML = "<p style='text-align: center; font-weight: bold; font-size: 1.75rem;'>Overdue Box Removed! 🤷‍♂️</p>"; // tried removing the elm with DOM nodes, didn't work so used outerHTML instead
+			overdueBoxElm.outerHTML = "";
+			/*overdueBoxElm.innerHTML = "<p style='text-align: center; font-weight: bold; font-size: 1.75rem;'>Overdue Box Removed!</p>"; // tried removing the elm with DOM nodes, didn't work so used outerHTML instead
 			overdueBoxElm.style.backgroundColor = "#e74c3c";
 			overdueBoxElm.style.color = "#ffffff";
 			overdueBoxElm.style.padding = "1rem";
-			overdueBoxElm.style.opacity = ".5";
+			overdueBoxElm.style.opacity = ".5";*/
 
 			// end check content loop (interval)
 			clearInterval(checkOverdueBoxContentLoop);
